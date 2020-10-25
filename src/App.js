@@ -1,27 +1,26 @@
 import React from 'react';
-import { Layout } from 'antd';
-import MyHeader from './components/MyHeader';
-import background from './images/background.jpg';
-import MainContent from './components/MainContent';
-import SideNav from './components/SideNav';
+import { Layout, } from 'antd';
+import MyHeader from './components/Layout/MyHeader';
 import 'antd/dist/antd.css';
 
 
 import './App.less';
 
+
+
+
 function App() {
   return (
-    <div className="App" >
-      <Layout>
-        <MyHeader />
-        <Layout style={{ minHeight: '100vh' }}>
+    <Layout className="main-layout">
+      <MyHeader />
 
-          <SideNav />
-          <MainContent />
+      {/* <Layout style={{ minHeight: '100vh' }}> */}
 
-        </Layout>
-      </Layout>
-    </div>
+      {/* <SideNav /> */}
+      {/* <MainContent /> */}
+
+      {/* </Layout> */}
+    </Layout>
   );
 }
 
