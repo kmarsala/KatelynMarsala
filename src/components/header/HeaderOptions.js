@@ -1,35 +1,33 @@
 import React, { useState } from 'react';
-import { Layout, Menu } from 'antd';
-import 'antd/dist/antd.css'
+import { useHistory } from "react-router-dom";
+import { Menu } from 'antd';
 
-
-const { SubMenu } = Menu;
-
-const MyMenu = () => {
+const HeaderOptions = () => {
     const [current, setCurrent] = useState('')
+    const history = useHistory();
 
     const handleClick = current => {
         console.log(current);
-        setCurrent(current);
+        setCurrent(current.key);
+        history.push(`/${current.key}`);
     };
-
 
     return (
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
             <Menu.Item key="home" >
                 Home
-            </Menu.Item>
+                </Menu.Item>
             <Menu.Item key="about"  >
                 About
-            </Menu.Item>
+                </Menu.Item>
             <Menu.Item key="portfolio"  >
                 Portfolio
-            </Menu.Item>
+                </Menu.Item>
             <Menu.Item key="contact">
                 Contact
-            </Menu.Item>
+                </Menu.Item>
         </Menu>
     )
 }
 
-export default MyMenu;
+export default HeaderOptions;
