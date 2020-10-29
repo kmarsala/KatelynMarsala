@@ -7,10 +7,10 @@ import * as emailjs from 'emailjs-com'
 const ContactForm = () => {
     const onFinish = (values) => {
         emailjs.send(
-            'service_mbcy68j',
-            'template_z5ywagl',
+            process.env.REACT_APP_EMAIL_SERVICE_ID,
+            process.env.REACT_APP_EMAIL_TEMPLATE_ID,
             values,
-            'user_sHPJMJLVzmSM1lt8UEqbc'
+            process.env.REACT_APP_EMAIL_USER_ID,
         )
     };
 
@@ -26,6 +26,7 @@ const ContactForm = () => {
             initialValues={{ remember: true }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
+            labelCol={{ span: 6 }}
         >
             <Form.Item
                 label="Name"
@@ -53,9 +54,9 @@ const ContactForm = () => {
             </Form.Item>
 
             <Form.Item >
-                <Button type="primary" htmlType="submit">
+                <Button className="submit-button" type="primary" htmlType="submit">
                     Submit
-        </Button>
+                </Button >
             </Form.Item>
         </Form>
     );

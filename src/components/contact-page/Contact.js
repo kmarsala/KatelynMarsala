@@ -7,6 +7,7 @@ const { Content } = Layout;
 
 const Contact = () => {
     return <Content className="contact-page">
+
         <ContactForm />
     </Content>;
 };
