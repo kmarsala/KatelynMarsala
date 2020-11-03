@@ -2,7 +2,12 @@
     height: 80vh;
     margin: 20px 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgba(255, 255, 255, 0.5);
+    h3 {
+        margin: 10px;
+    }
 }
 
 .ant-form{
@@ -14,3 +19,8 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .ant-form{
+        width: 90%;
+    }
+}

@@ -23,34 +23,32 @@ const ContactForm = () => {
             name="contact-form"
             className="contact-form"
             requiredMark={false}
+            layout="vertical"
             initialValues={{ remember: true }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             labelCol={{ span: 6 }}
         >
             <Form.Item
-                label="Name"
                 name="name"
                 rules={[{ required: true, message: 'Name' }]}
             >
-                <Input />
+                <Input placeholder="Name" />
             </Form.Item>
 
             <Form.Item
-                label="Email"
                 name="email"
                 rules={[{ required: true, message: 'Enter email' },
                 ]}
             >
-                <Input />
+                <Input placeholder="Email" />
             </Form.Item>
 
             <Form.Item
-                label="Message"
                 name="message"
                 rules={[{ required: true, message: 'Your message' }]}
             >
-                <TextArea />
+                <TextArea placeholder="Message" />
             </Form.Item>
 
             <Form.Item >

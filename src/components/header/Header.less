@@ -1,9 +1,17 @@
 .header {
     height: 75px !important;
     display: flex;
+    color: white;
     align-items: center;
     justify-content: space-between;
-    background: white !important;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 28%, rgba(255,255,255,0.78) 100%) !important;
+    border-bottom: 2px solid black;
+
+    h1 {
+        color: white;
+        margin: 0;
+    }
 
     .header-options {
         display: flex;
@@ -12,10 +20,22 @@
     }
 
     .header-icon {
-        color: navy;
         font-size: 32px;
         padding: 0 10px;
         cursor: pointer;
     }
+
+    .ant-menu{
+        background-color: inherit;
+        border-color: inherit;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+      h1 {
+          display: none;
+      }
+    }
+  }
 

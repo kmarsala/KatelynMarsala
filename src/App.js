@@ -4,7 +4,7 @@ import { Layout, } from 'antd';
 import Header from './components/header/Header';
 import Home from './components/home-page/Home';
 import Contact from './components/contact-page/Contact';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 
 import './App.less';
 

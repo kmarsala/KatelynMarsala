@@ -8,7 +8,7 @@ const { Content } = Layout;
 const Home = () => {
     return <Content className="home-page">
         <img src={Headshot} alt="Headshot" className="headshot" />
-        <p>Hello! My name is Katelyn Marsala.</p>
+        <p>Hello! My name is Katelyn Marsala. </p>
     </Content>;
 };
 
