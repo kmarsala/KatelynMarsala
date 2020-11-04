@@ -6,9 +6,9 @@ import './Contact.less';
 const { Content } = Layout;
 
 const Contact = () => {
-    return <Content className="contact-page">
+    return <Content className="contact">
         {/* <h1>Contact</h1> */}
-        <h3>Have a question?</h3>
+        <h3>Have a question? Send me a message</h3>
         <ContactForm />
     </Content>;
 };

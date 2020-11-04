@@ -9,8 +9,7 @@ const AntHeader = Layout.Header;
 
 const Header = () => {
   return <AntHeader className="header">
-    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kmarsala/">
-
+    <a href="/home">
       <h1>Katelyn Marsala</h1>
     </a>
     <div className="header-options">

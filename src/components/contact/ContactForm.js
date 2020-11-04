@@ -38,8 +38,7 @@ const ContactForm = () => {
 
             <Form.Item
                 name="email"
-                rules={[{ required: true, message: 'Enter email' },
-                ]}
+                rules={[{ required: true }]}
             >
                 <Input placeholder="Email" />
             </Form.Item>
@@ -52,7 +51,7 @@ const ContactForm = () => {
             </Form.Item>
 
             <Form.Item >
-                <Button className="submit-button" type="primary" htmlType="submit">
+                <Button className="submit-button" type="secondary" htmlType="submit">
                     Submit
                 </Button >
             </Form.Item>

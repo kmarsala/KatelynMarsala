@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Layout, } from 'antd';
 import Header from './components/header/Header';
-import Home from './components/home-page/Home';
-import Contact from './components/contact-page/Contact';
+import Home from './components/home/Home';
+import Contact from './components/contact/Contact';
+import Portfolio from './components/portfolio/Portfolio';
 import 'antd/dist/antd.less';
 
 import './App.less';
@@ -21,7 +22,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/contact" component={Contact} />
-            {/* <Route exact path="/nowplaying" component={NowPlaying} /> */}
+            <Route exact path="/portfolio" component={Portfolio} />
             {/* <Route exact path="/upcoming" component={Upcoming} />
           <Route exact path="/genres" component={Genres} />
           <Route
@@ -32,13 +33,7 @@ function App() {
             {/* <Route exact path="/movie/:id" component={MovieDetailsContainer} /> */}
           </Switch>
         </Content>
-        {/* <Layout style={{ minHeight: '100vh' }}> */}
-
       </Router>
-      {/* <SideNav /> */}
-      {/* <MainContent /> */}
-
-      {/* </Layout> */}
     </Layout>
   );
 }
